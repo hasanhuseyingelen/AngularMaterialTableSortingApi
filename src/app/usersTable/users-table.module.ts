@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatTableModule } from '@angular/material/table';
 import { UsersTableComponent } from './components/users-table/users-table.component';
 
 
@@ -9,7 +10,8 @@ import { UsersTableComponent } from './components/users-table/users-table.compon
     UsersTableComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatTableModule
   ],
   exports: [
     UsersTableComponent
