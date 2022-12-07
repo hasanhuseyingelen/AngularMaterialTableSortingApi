@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersTableModule } from './usersTable/usersTable.module';
-import { UsersTableComponent } from './usersTable/components/users-table/users-table.component';
 
 
 @NgModule({

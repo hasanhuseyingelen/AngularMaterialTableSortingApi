@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./users-table.component.css']
 })
 export class UsersTableComponent {
-
+  displayedColumns: string[] = ['id', 'name', 'userName'];
 }
