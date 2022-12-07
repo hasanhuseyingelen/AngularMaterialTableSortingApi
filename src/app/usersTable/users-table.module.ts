@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { UsersTableComponent } from './components/users-table/users-table.component';
+import { UsersService } from './services/users.service';
+import { UsersDataSource } from './services/users.dataSource';
 
 
 
@@ -15,6 +17,10 @@ import { UsersTableComponent } from './components/users-table/users-table.compon
   ],
   exports: [
     UsersTableComponent
+  ],
+  providers: [
+    UsersService,
+    UsersDataSource
   ]
 })
 export class UsersTableModule { }
