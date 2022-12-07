@@ -11,8 +11,7 @@ import { UsersTableComponent } from './usersTable/components/users-table/users-t
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UsersTableComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
