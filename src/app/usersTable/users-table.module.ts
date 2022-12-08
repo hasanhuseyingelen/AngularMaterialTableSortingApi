@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+
 import { UsersTableComponent } from './components/users-table/users-table.component';
 import { UsersService } from './services/users.service';
 import { UsersDataSource } from './services/users.dataSource';
@@ -13,7 +16,8 @@ import { UsersDataSource } from './services/users.dataSource';
   ],
   imports: [
     CommonModule,
-    MatTableModule
+    MatTableModule,
+    MatSortModule
   ],
   exports: [
     UsersTableComponent
@@ -23,4 +27,6 @@ import { UsersDataSource } from './services/users.dataSource';
     UsersDataSource
   ]
 })
+
+
 export class UsersTableModule { }

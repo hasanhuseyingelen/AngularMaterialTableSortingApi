@@ -1,5 +1,6 @@
 import { DataSource } from "@angular/cdk/collections";
 import { Injectable } from "@angular/core";
+import { Sort } from "@angular/material/sort";
 import { BehaviorSubject, Observable } from "rxjs";
 import { UserInterface } from "../types/user.interface";
 import { UsersService } from "./users.service";
@@ -22,13 +23,13 @@ export class UsersDataSource extends DataSource<UserInterface> {
         this.users$.complete();
     }
 
-    loadUsers(): void {
+    loadUsers(sort: Sort): void {
         this.isLoading$.next(true);
-        this.UsersService.fetchUsers().subscribe((users) => {
+        this.UsersService.fetchUsers(sort).subscribe((users) => {
             this.users$.next(users);
             this.isLoading$.next(false);
         });
     }
-    
+
 
 }

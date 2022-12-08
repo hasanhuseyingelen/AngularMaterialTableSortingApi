@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Sort } from '@angular/material/sort';
 import { UsersDataSource } from '../../services/users.dataSource';
 import { UsersService } from '../../services/users.service';
 
@@ -12,13 +13,17 @@ export class UsersTableComponent implements OnInit{
   dataSource = new UsersDataSource(this.userService);
 
   constructor(private userService: UsersService) {
-    
-  } 
+
+  }
 
   ngOnInit(): void {
-    this.dataSource.loadUsers();
+    this.dataSource.loadUsers({active: 'id', direction: 'asc'});
   }
-  
+
+  sortUsers(sort: Sort): void {
+    this.dataSource.loadUsers(sort);
+  }
+
   // dataSource = [
   //   {
   //     id: '1',
