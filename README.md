@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
+Angular v15 supports node.js versions: 14.20.x, 16.13.x and 18.10.x
+
+Angular v15 supports TypeScript version 4.8 or later
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
