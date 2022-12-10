@@ -1,4 +1,9 @@
-<div *ngIf="dataSource.isLoading$ | async">Loading Data..</div>
+<!-- <div *ngIf="dataSource.isLoading$ | async">Loading Data..</div> -->
+
+<div class="centered" *ngIf="dataSource.isLoading$ | async">
+    <mat-spinner></mat-spinner>
+</div>
+
 <div>
     <table
     mat-table
