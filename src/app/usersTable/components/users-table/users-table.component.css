@@ -11,3 +11,14 @@
     text-align: left;
     padding: 8px;
 }
+
+
+.paginator-data * {
+  margin: 16px 0;
+}
+
+.paginator {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
